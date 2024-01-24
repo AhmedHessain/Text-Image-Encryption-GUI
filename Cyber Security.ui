@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>865</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>865</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#232323;</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>881</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(20, 20, 20);
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="selectTextPageBtn">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: white;
+font: 15pt &quot;Sans Serif Collection&quot;;
+border:1px solid rgb(122, 128, 145);
+border-radius:10px;</string>
+         </property>
+         <property name="text">
+          <string>Encrypt Text</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="selectImgPageBtn">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: white;
+font: 15pt &quot;Sans Serif Collection&quot;;
+border:1px solid rgb(122, 128, 145);
+border-radius:10px;</string>
+         </property>
+         <property name="text">
+          <string>Encrypt Image</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color:#232323;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="TextEncryptionPage">
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>641</width>
+          <height>681</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QTextEdit" name="plainText">
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>24</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">padding: 5px;
+font: 24pt &quot;Calibri&quot;;
+border: 1px solid black;
+border-radius: 7px;
+color: white;
+</string>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:24pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:26pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QComboBox" name="cipher_list">
+               <property name="styleSheet">
+                <string notr="true">background-color:rgb(20, 20, 20);
+color: white;
+padding-left: 10px;
+font: 10pt &quot;Calibri&quot;;
+border: 1px solid rgb(132, 139, 156);
+border-radius: 3px;</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Caesar</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Monoalphabetic</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Polyalphabetic</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Playfair</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="keyText">
+               <property name="minimumSize">
+                <size>
+                 <width>130</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>130</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+border-radius: 7px;
+border:1px solid rgb(122, 128, 145);
+padding: 3px;
+
+background-color:rgb(20, 20, 20);
+</string>
+               </property>
+               <property name="text">
+                <string>15</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="placeholderText">
+                <string>key</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="encryptButton">
+               <property name="minimumSize">
+                <size>
+                 <width>93</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 7px;
+border: 1px solid rgb(132, 139, 156);
+background-color:rgb(20, 20, 20);
+color: white;</string>
+               </property>
+               <property name="text">
+                <string>Encrypt</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="decryptButton">
+               <property name="minimumSize">
+                <size>
+                 <width>93</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius: 7px;
+border: 1px solid rgb(132, 139, 156);
+background-color:rgb(20, 20, 20);
+color: white;</string>
+               </property>
+               <property name="text">
+                <string>Decrypt</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="encryptedText">
+             <property name="styleSheet">
+              <string notr="true">padding: 5px;
+font: 24pt &quot;Calibri&quot;;
+border: 1px solid black;
+color: white;
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>30</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+border:1px solid rgb(122, 128, 145);
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>Decrypted</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>380</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+border:1px solid rgb(122, 128, 145);
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>Encrypted</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="ImageEncryptionPage">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_5" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>616</width>
+                <height>290</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>616</width>
+                <height>290</height>
+               </size>
+              </property>
+              <widget class="QLabel" name="decryptedimg">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>616</width>
+                 <height>290</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>616</width>
+                 <height>290</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="test.qrc">:/newPrefix/senua.jpg</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="geometry">
+                <rect>
+                 <x>510</x>
+                 <y>10</y>
+                 <width>93</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+border:1px solid rgb(122, 128, 145);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string>Decrypted</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_7" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLineEdit" name="keyImage">
+                 <property name="minimumSize">
+                  <size>
+                   <width>175</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: white;
+
+padding: 3px;
+border:none;
+background-color:rgb(20, 20, 20);
+border-radius: 7px;
+border:1px solid rgb(122, 128, 145);</string>
+                 </property>
+                 <property name="text">
+                  <string>43125</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Seed</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="loadImgBtn_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px;
+border:1px solid rgb(122, 128, 145);
+background-color: rgb(155, 163, 184);
+color: white;
+background-color:rgb(20, 20, 20);
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Load Image</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="loadEcryptedImgBtn_5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px;
+border:1px solid rgb(122, 128, 145);
+background-color: rgb(155, 163, 184);
+color: white;background-color:rgb(20, 20, 20);
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Load Encrypted Image</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="encryptImgBtn_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px;
+border:1px solid rgb(122, 128, 145);
+background-color: rgb(155, 163, 184);
+color: white;background-color:rgb(20, 20, 20);
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Encrypt</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_4" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="decryptImgBtn_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px;
+border:1px solid rgb(122, 128, 145);
+background-color: rgb(155, 163, 184);
+color: white;
+background-color:rgb(20, 20, 20);
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Decrypt</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="loadEcryptedImgBtn_6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px;
+border:1px solid rgb(122, 128, 145);
+background-color: rgb(155, 163, 184);background-color:rgb(20, 20, 20);
+
+color: white;</string>
+                 </property>
+                 <property name="text">
+                  <string>Save Encrypted Image</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="loadEcryptedImgBtn_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px;
+border:1px solid rgb(122, 128, 145);
+background-color: rgb(155, 163, 184);
+color: white;background-color:rgb(20, 20, 20);
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Save Decrypted Image</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_6" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>616</width>
+                <height>289</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>616</width>
+                <height>290</height>
+               </size>
+              </property>
+              <widget class="QLabel" name="encryptedImg">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>616</width>
+                 <height>289</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>616</width>
+                 <height>290</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="test.qrc">:/newPrefix/senua.jpg</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="geometry">
+                <rect>
+                 <x>510</x>
+                 <y>10</y>
+                 <width>93</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+border:1px solid rgb(122, 128, 145);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string>Encrypted</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="test.qrc"/>
+ </resources>
+ <connections/>
+</ui>
